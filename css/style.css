@@ -6,142 +6,174 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .container{
-    width: 1000px;
-    height: 900px;
+    width: 1100px;
+    height: 600px;
     grid-gap: 8px;
-    margin: 15px auto;
+    margin: 120px auto;
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    "reloj reloj reloj reloj reloj reloj gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "reloj reloj reloj reloj reloj reloj gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "reloj reloj reloj reloj reloj reloj gps gps gps gps gps depth depth depth carbon carbon carbon carbon carbon carbon"
+    "reloj reloj reloj reloj reloj reloj relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral carbon carbon carbon carbon carbon carbon"
+    "montain montain montain modular modular modular relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral carbon carbon carbon carbon carbon carbon"
+    "montain montain montain modular modular modular relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral bateria bateria bateria dive dive dive"
+    "montain montain montain modular modular modular relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral bateria bateria bateria dive dive dive"
+    "band band band band band band relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral custom custom custom custom custom custom"
+    "band band band band band band relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral relojcentral custom custom custom custom custom custom"
+    "procesador procesador procesador procesador colors colors cicla cicla precision precision precision precision flash flash gesture gesture gesture gesture gesture gesture"
+    "procesador procesador procesador procesador colors colors cicla cicla precision precision precision precision flash flash gesture gesture gesture gesture gesture gesture"
+    "procesador procesador procesador procesador colors colors cicla cicla precision precision precision precision flash flash gesture gesture gesture gesture gesture gesture";
 }
 .container div{
     border: 1px solid var(--color-primary);
-    border-radius: 5px;
+    border-radius: 20px;
     background: var(--color-secundary);
 }
 .item__1{
-    /* grid-area: nits; */
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
+    grid-area: reloj;
     display: flex;
 }
 .reloj{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__2{
-    /* grid-area: gps; */
-    grid-column: 5 / 8;
-    grid-row: 1 / 1;
+    grid-area: gps;
     display: flex;
 }
 .gps{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__3{
-    /* grid-area: montaña; */
-    grid-column: 8 / 10;
-    grid-row: 1 / 2;
+    grid-area: depth;
     display: flex;
 }
 .depth{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__4{
-    /* grid-area: modular; */
-    grid-column: 10 / 14;
-    grid-row: 1 / 2;
+    grid-area: carbon;
 }
 .carbon{
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .item__5{
-    /* grid-area: reloj; */
-    grid-column: 5 / 10;
-    grid-row: 2 / 5;
+    grid-area: relojcentral;
     display: flex;
 }
 .central{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__6{
-    /* grid-area: depth; */
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    grid-area: montain;
     display: flex;
 }
 .montain{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__7{
-    /* grid-area: carbon; */
-    grid-column: 3 / 5;
-    grid-row: 2 / 3;
+    grid-area: modular;
     display: flex;
 }
 .modular{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__8{
-    /* grid-area: hora; */
-    grid-column: 10 / 12;
-    grid-row: 3 / 4;
+    grid-area: bateria;
     display: flex;
 }
 .bateria{
     width: 100%;
-    border-radius: 5px;
-    object-fit: contain;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__9{
-    /* grid-area: dive; */
-    grid-column: 12 / 14;
-    grid-row: 3 / 4;
+    grid-area: dive;
+    display: flex;
+}
+.dive{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__10{
-    /* grid-area: costom; */
-    grid-column: 1 / 5;
-    grid-row: 4/5;
-
+    grid-area: band;
+}
+.band{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__11{
-    grid-column: 10 / 14;
+    grid-area: custom;
+}
+.custom{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__12{
-    grid-column: 1 / 4;
-    grid-row: 5 / 7;
+    grid-area: procesador;
+}
+.procesador{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__13{
-    grid-column: 4 / 5;
-    grid-row: 5 / 7;
+    grid-area: colors;
+}
+.colors{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__14{
-    grid-column: 5 / 6;
-    grid-row: 5 / 7;
+    grid-area: cicla;
+}
+.cicla{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__15{
-    grid-column: 6 / 9;
-    grid-row: 5 / 7;
+    grid-area: precision;
+}
+.precision{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__16{
-    grid-column: 9 / 10;
-    grid-row: 5 / 7;
+    grid-area: flash;
+}
+.flash{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
 .item__17{
-    grid-column: 10 / 14;
-    grid-row: 5 / 7;
+    grid-area: gesture;
+}
+.gesture{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
 }
